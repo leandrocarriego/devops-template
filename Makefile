@@ -1,3 +1,5 @@
+.PHONY: all test
+
 install:
 	#install dependencies
 	pip install --upgrade pip &&\
