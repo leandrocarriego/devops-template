@@ -8,6 +8,7 @@ test:
 	#test
 format:
 	#format
+	black *.py src/*.py
 deploy:
 	#deploy
 all: install lint test deploy
