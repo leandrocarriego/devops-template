@@ -34,9 +34,15 @@ jobs:
     - name: Format code
       run: |
         make format
+      
+    - name: Build container
+      run: |
+        make build
 
+    - name: Run container
+      run: |
+        make run
          
     - name: Deploy
       run: |
         make deploy
-

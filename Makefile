@@ -15,7 +15,10 @@ format:
 	black *.py src/*.py
 build:
 	#build container
-
+	docker build -t devops-app .
+run:
+	#run docker
+	docker run devops-app
 deploy:
 	#deploy
 all: install lint test deploy
